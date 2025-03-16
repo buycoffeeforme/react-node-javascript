@@ -1,0 +1,16 @@
+{
+  "name": "react-cdn-example",
+  "version": "1.0.0",
+  "description": "basic react cdn example",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Santosh Shingare",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
