@@ -1,16 +1,12 @@
-/**
- * @fileoverview This file contains an incomplete function related to subarrays.
- * @description The original code was not functional for finding any subarray-related information.
- *              It has been removed, and a placeholder comment has been kept to represent the initial intent of the file.
- *              If you want to implement specific subarray logic you can put here.
- */
-
-// Functionality related to subarrays can be added here.
-// For example, finding the maximum sum of a contiguous subarray, etc.
-
-// let mainArray = [12, 56, 99, 85, 36, 57, 27, 95, 68];
-// let maxNumber = findMaxNumber(mainArray);
-// console.log("Max Number in Array :", maxNumber);
-
-
-    
+function sortDescending(arr) {
+    let newArr = []
+    for (let i =0; i < arr.length; i++) {
+        for (let j =i; j < arr.length; j++) {
+            newArr.push(arr.slice(i, j + 1));
+        }
+    }
+    return newArr;
+}
+let mainArray = [-2,-5,6,-2,-3,1,5,-6];
+let pp = sortDescending(mainArray);
+console.log(pp);
